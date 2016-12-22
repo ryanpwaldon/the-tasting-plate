@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /the_tasting_plate
+exclude: ['README.md']
