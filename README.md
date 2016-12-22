@@ -1,1 +1,1 @@
-# the_tasting_plate
+# the-tasting-plate
