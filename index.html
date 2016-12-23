@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>The Tasting Plate</title>
-</head>
-<body>
+---
+layout: default
+title: The Tasting Plate
+---
 
 <h1>The Tasting Plate</h1>
 
-</body>
-</html>
+{% for post in site.posts %}
+	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<p>{{ post.meta }}</p>
+{% endfor %}
