@@ -2,14 +2,16 @@
 layout: blog
 title: The Local Press
 meta: Juice on the water.
-visited: 2016-12-20
-published: 2016-12-23
-address: 81 Giles St, Kingston ACT 2604
+visited: {}
+published: true
+address: '81 Giles St, Kingston ACT 2604'
 rating: 5/5
-website: http://www.localpresscafe.com.au/
+website: 'http://www.localpresscafe.com.au/'
 ---
 
 Suspendisse porttitor felis ac tempus gravida. Donec lacinia leo augue, adipiscing dapibus neque consequat ut. Ut et tellus ullamcorper, consectetur tellus eu, dapibus erat. Aenean fringilla erat in nunc adipiscing, at consectetur arcu luctus. Sed rutrum ornare eros, ac rutrum dolor elementum semper. Vivamus venenatis ligula non neque hendrerit, quis faucibus dui adipiscing. Cras faucibus nulla a velit auctor lobortis.
+
+![1.jpeg]({{site.baseurl}}/assets/images/local-press-cafe/1.jpeg)
 
 Phasellus ac ultrices justo. Donec in dui viverra, sodales ligula sit amet, iaculis tortor. Aenean dignissim nisl a elementum mattis. Duis venenatis et eros nec laoreet. Fusce eu sodales nulla, euismod eleifend ligula. Sed augue eros, faucibus nec leo id, pulvinar dapibus quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et mi mauris. Duis cursus enim mauris, faucibus vehicula lacus ullamcorper at.
 
