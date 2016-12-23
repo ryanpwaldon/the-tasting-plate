@@ -1,2 +1,3 @@
 baseurl: /the_tasting_plate
+url: http://ryanpwaldon.github.io
 exclude: ['README.md']
