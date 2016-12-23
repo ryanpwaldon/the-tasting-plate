@@ -1,3 +1,2 @@
-baseurl: /the_tasting_plate
-url: http://ryanpwaldon.github.io
+baseurl: /the-tasting-plate
 exclude: ['README.md']
