@@ -49,14 +49,14 @@ layout: default
 	<script>
 		var rating = "{{ page.rating }}";
 		if (rating % 1 === 0.5) {
-			$('.rating').append('<img class="heart" src="/assets/img/misc/heart-half-2.svg" alt="heart-half">');
+			$('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart-half-2.svg" alt="heart-half">');
 			rating = rating - 0.5;
 			for (i = 0; i < rating; i ++) {
-				$('.rating').append('<img class="heart" src="/assets/img/misc/heart.svg" alt="heart">');
+				$('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart.svg" alt="heart">');
 			}
 		} else {
 			for (i = 0; i < rating; i ++) {
-				$('.rating').append('<img class="heart" src="/assets/img/misc/heart.svg" alt="heart">');
+				$('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart.svg" alt="heart">');
 			}
 		}
 	</script>
