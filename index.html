@@ -1,11 +1,11 @@
 ---
 layout: default
 title: The Tasting Plate
+permalink: /
 ---
 
-<h1>The Tasting Plate</h1>
-
-{% for post in site.posts %}
-	<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-	<p>{{ post.meta }}</p>
-{% endfor %}
+<div class="body-title">
+	<h1>Recently Eaten</h1>
+</div>
+{% include article-feature.html %}
+{% include article-index.html view-all-eats=true offset=1 limit=6 %}

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400')
+
+
+// variables
+/*=====================*/
+
+// colors
+$grey-dark: #95989A
+$grey-light: #D8D8D8
+$grey-light-light: #F4F4F4
+$grey-border: #DEDEDE
+$black: #676767
+$blue: #339CDD
+//fonts
+$playfair: 'Playfair Display', serif
+$opensans: 'Open Sans', sans-serif
+
+// measurements
+/*=====================*/
+
+$page-width: 780px
+$border: 1px solid $grey-border
+
+// reset
+/*=====================*/
+
+h1, h2, h3, h4, h5, h6, p, span
+	padding: 0
+	margin: 0
+
+strong
+	font-weight: 600
+
+a
+	text-decoration: none
+	color: inherit
+	font-weight: normal
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+// styles
+/*=====================*/
+/*=====================*/
+
+// body
+/*==========================================================================================================================================*/
+
+body
+	background-color: $grey-light-light
+
+// nav (for header and footer)
+/*==========================================================================================================================================*/
+
+nav
+
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+		li
+			font-family: $playfair
+			color: $grey-dark
+			font-weight: 600
+			font-size: 15px
+			padding-bottom: 6px
+
+			.active
+				color: $grey-light
+
+// header
+/*==========================================================================================================================================*/
+
+.header
+	background-color: white
+	overflow: hidden
+
+	.header-content
+		width: $page-width
+		margin: auto
+		padding: 0px 40px
+		margin-top: 50px
+
+		nav
+			position: absolute
+			right: 0
+			bottom: 0
+
+		.header-upper
+			position: relative
+			height: 100%
+			margin-bottom: 50px
+
+			.title
+				display: inline-block
+
+			h1
+				font-family: $playfair
+				font-size: 42px
+				font-weight: 400
+				color: $grey-dark
+				line-height: 58px
+
+			.hr-thick
+				border: none
+				border-bottom: $grey-light 8px solid
+				margin: 15px 0px 20px 0px
+
+			.subtitle
+				font-family: $opensans
+				font-size: 15px
+				font-weight: 300
+				letter-spacing: 1px
+				padding-bottom: 6px
+				color: $grey-dark
+
+			.subtitle strong
+				font-weight: 600
+
+		.header-lower
+			position: relative
+			height: 100%
+			margin-bottom: 50px
+
+
+			.insta-meta
+				position: absolute
+				left: -70px
+
+				.insta-icon
+					width: 28px
+
+			.insta-feed
+				display: flex
+				justify-content: space-between
+				height: 100%
+
+				img
+					width: 150px
+					height: auto
+					border-radius: 5px
+
+// main-content
+/*==========================================================================================================================================*/
+
+.body
+	position: relative
+	height: 100%
+	width: 100%
+	border-top: $border
+
+	.body-content
+		position: relative
+		width: $page-width
+		margin: auto
+		padding: 40px 40px 0px 40px
+
+		.body-title
+			padding: 0px 0px 40px 0px
+
+			h1
+				font-family: $playfair
+				font-size: 42px
+				font-weight: 400
+				color: $grey-dark
+
+// article-feature
+/*==========================================================================================================================================*/
+
+.article-feature
+	width: 100%
+	border: $border
+	border-radius: 5px
+	margin-bottom: 40px
+	overflow: hidden
+	
+
+	.feature-image
+		height: 500px
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+
+	.feature-header
+
+		h3
+			background-color: white
+			padding: 15px
+			font-family: $opensans
+			font-size: 15px
+			font-weight: 300
+			letter-spacing: 1px
+
+			.feature-title
+				color: $black
+
+			.feature-suburb
+				color: $grey-dark
+
+			.feature-eaten
+				color: $blue
+
+			.fa
+				color: $grey-light
+				font-size: 4px
+				vertical-align: middle
+
+	.feature-excerpt
+		background-color: white
+
+		.article-typography
+			padding: 15px
+			font-family: $opensans
+			color: $black
+			font-weight: 200
+			line-height: 30px
+			font-size: 15px
+
+// article-index
+/*==========================================================================================================================================*/
+
+.article-index
+	width: 100%
+	height: 100%
+
+	ul
+		display: flex
+		justify-content: space-between
+		flex-flow: row wrap
+
+		.article-item
+			width: 240px
+			height: 320px
+			border: $border
+			border-radius: 5px
+			margin-bottom: 40px
+			background-position: center center
+			background-size: cover
+			background-repeat: no-repeat
+			overflow: hidden
+
+			.item-header
+				background-color: white
+				font-family: $opensans
+				font-size: 10px
+				letter-spacing: 1px
+				line-height: 16px
+				font-weight: 300
+				padding: 8px
+
+				.item-title
+					color: $black
+
+				.item-suburb
+					color: $grey-dark
+
+				.item-eaten
+					color: $blue
+
+				.fa
+					color: $grey-light
+					font-size: 4px
+					vertical-align: middle
+
+	.view-all-eats
+		width: 100%
+		text-align: center
+		background-color: white
+		border: $border
+		border-radius: 5px
+		margin-bottom: 40px
+
+		p
+			padding: 15px
+			font-family: $opensans
+			font-size: 15px
+			font-weight: 300
+			color: $grey-dark
+			letter-spacing: 1px
+
+// footer
+/*==========================================================================================================================================*/
+
+.footer
+	width: 100%
+	height: 100%
+
+	.footer-content
+		position: relative
+		width: $page-width
+		height: 100%
+		margin: auto
+		padding: 40px 0px
+		margin: auto
+		overflow: hidden
+		border-top: solid white 1px
+
+		.footer-text
+			float: right
+			font-family: $opensans
+			color: $grey-dark
+			font-size: 15px
+			font-weight: 200
+			letter-spacing: 1px
+			line-height: 200%
+
+			.fa
+				color: $grey-light
+				font-size: 4px
+				vertical-align: middle
+
+			.copyright
+				color: $grey-light
+
+		nav
+			float: left
+
+// post
+/*==========================================================================================================================================*/
+
+.body-title-post-name
+	color: $grey-light
+
+.share
+	position: absolute
+	text-align: center
+	width: 100px
+	left: -75px
+
+	p
+		font-family: $opensans
+		font-weight: 300
+		color: $grey-dark
+		letter-spacing: 1px
+
+	.share-title
+		display: inline-block
+		padding: 15px 0px
+		font-size: 15px
+		border-bottom: $border
+
+	.share-icons
+		padding: 15px 0px
+		line-height: 20px
+		font-size: 12px
+
+
+.metadata
+	position: absolute
+	width: 130px
+	right: -130px
+
+	p
+		font-family: $opensans
+		font-weight: 300
+		color: $grey-dark
+		letter-spacing: 1px
+
+	.metadata-title
+		display: inline-block
+		padding: 15px 0px
+		font-size: 15px
+		border-bottom: $border
+
+	.metadata-content
+		padding: 15px 0px
+		line-height: 20px
+		font-size: 12px
+
+	.hr-thin
+		border: none
+		border-bottom: solid 1px $grey-light
+		margin: 15px 0px
+
+.post
+	position: relative
+	margin-bottom: 40px
+	background-color: white
+	border: $border
+	border-radius: 5px
+	overflow: hidden
+
+	.post-header
+		
+		h3
+			float: left
+			background-color: white
+			padding: 15px
+			font-family: $opensans
+			font-size: 15px
+			font-weight: 300
+			letter-spacing: 1px
+
+			.post-title
+				color: $black
+
+			.post-suburb
+				color: $grey-dark
+
+			.post-eaten
+				color: $blue
+
+			.fa
+				color: $grey-light
+				font-size: 4px
+				vertical-align: middle
+
+		.rating
+			float: right
+			padding: 15px
+
+			.heart
+				vertical-align: middle
+				width: 20px
+				margin-left: 5px
+	
+	.post-content
+
+		p
+			margin: 0px 20px 20px 20px
+			font-family: $opensans
+			color: $black
+			font-weight: 200
+			line-height: 30px
+			font-size: 15px
+
+		.post-image
+
+			img
+				width: 100%
+
+		.caption
+			color: $grey-dark
+			border-bottom: solid $grey-light 1px
+			padding: 10px 0px
+
+	#map
+		height: 400px
+
+		.gm-style-cc
+			display: none

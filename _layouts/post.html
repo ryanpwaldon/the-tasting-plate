@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div class="body-title">
+	<h1><a href="/eats">Eats</a></span> <span class="body-title-post-name">/ {{ page.title }}</span></h1>
+</div>
+
+<aside class="share">
+	<div class="share-title">
+		<p>Share</p>
+	</div>
+	<div class="share-icons">
+		<p><strong>f</strong></p>
+		<p><strong>m</strong></p>
+		<p><strong>t</strong></p>
+	</div>
+</aside>
+
+<aside class="metadata">
+	<div class="metadata-title">
+		<p>Metadata</p>
+	</div>
+	<div class="metadata-content">
+		<p><strong>Author</strong> {{ page.author }}</p>
+		<p><strong>Eaten</strong> <span class="date">{{ page.date }}</span></p>
+		<p><strong>Rating</strong> {{ page.rating }}/5</p>
+		<p><strong>Cost</strong> {{ page.cost }}</p>
+		<hr class="hr-thin">
+		<p><strong>Address</strong><br>{{ page.address }}</p>
+		<hr class="hr-thin">
+		<p><strong>District</strong><br>{{ page.district }}</p>
+		<hr class="hr-thin">
+		<p>Scroll for map <i class="fa long-arrow-down" aria-hidden="true"></i></p>
+	</div>
+</aside>
+
+<section class="post">
+	<div class="post-header">
+		<h3>
+			<span class="post-title">{{ page.title }}</span>
+			<span class="post-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.suburb }}</span>
+			<span class="post-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <strong>Eaten</strong> <span class="date">{{ page.date }}</span></span>
+		</h3>
+		<div class="rating"></div>
+	</div>
+	<div class="post-content">{{ page.content }}</div>
+	{% include map.html %}
+	<script>
+		var rating = "{{ page.rating }}";
+		if (rating % 1 === 0.5) {
+			$('.rating').append('<img class="heart" src="/assets/img/misc/heart-half-2.svg" alt="heart-half">');
+			rating = rating - 0.5;
+			for (i = 0; i < rating; i ++) {
+				$('.rating').append('<img class="heart" src="/assets/img/misc/heart.svg" alt="heart">');
+			}
+		} else {
+			for (i = 0; i < rating; i ++) {
+				$('.rating').append('<img class="heart" src="/assets/img/misc/heart.svg" alt="heart">');
+			}
+		}
+	</script>
+</section>
+
+<div class="body-title">
+	<h1>Recently Eaten</h1>
+</div>
+
+{% include article-index.html view-all-eats=true offset=0 limit=6 %}

@@ -2,14 +2,19 @@
 <html>
 <head>
 	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+	<script src="https://use.fontawesome.com/b703f5d0be.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">About</a></li>
-			<li><a href="/food-map">Food Map</a></li>
-		</ul>
-	</nav>
-	{{ content }}
+
+	{% include header.html %}
+	<section class="body">
+		<div class="body-content">{{ content }}</div>
+	</section>
+	{% include footer.html %}
+
 </body>
 </html>

@@ -1,0 +1,31 @@
+<div class="article-index">
+	<ul>
+		{% for post in site.posts offset:{{include.offset}} limit:{{include.limit}} %}
+			{% assign foundImage = 0 %}
+			{% assign images = post.content | split: '<img src="' %}
+			{% for image in images %}
+				{% if image contains '1' %}
+					{% if foundImage == 0 %}
+					{% assign imageUrl = image | split: '"' | first %}
+
+							<li class="article-item" style="background-image: url('{{ imageUrl }}');">
+								<div class="item-header">
+									<span class="item-title">{{ post.title }}</span>
+									<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
+									<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
+								</div>
+							</li>
+
+					{% assign foundImage = 1 %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</ul>
+
+	{% if include.view-all-eats %}
+		<div class="view-all-eats">
+			<p>view all eats</p>
+		</div>
+	{% endif %}
+</div>

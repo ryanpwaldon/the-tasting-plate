@@ -1,0 +1,28 @@
+{% for post in site.posts limit:1 %}
+	{% assign foundImage = 0 %}
+	{% assign images = post.content | split: '<img src="' %}
+	{% for image in images %}
+		{% if image contains '1' %}
+			{% if foundImage == 0 %}
+			{% assign imageUrl = image | split: '"' | first %}
+
+				<div class="article-feature">
+					<div class="feature-header">
+						<h3>
+							<span class="feature-title">{{ post.title }}</span>
+							<span class="feature-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
+							<span class="feature-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <strong>Eaten</strong> <span class="date">{{ post.date }}</span></span>
+						</h3>
+					</div>
+					<div class="feature-image" style="background-image: url('{{ imageUrl }}');">
+					</div>
+					<div class="feature-excerpt">
+						<p class="article-typography">{{ post.content | strip_html | truncatewords:100 }}</p>
+					</div>
+				</div>
+
+			{% assign foundImage = 1 %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
