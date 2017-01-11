@@ -11,7 +11,7 @@ website: 'http://www.localpresscafe.com.au/'
 published: true
 ---
 
-<div class="post-image"><img src="/assets/img/posts/local-press-cafe-1.jpg" alt="1"></div>
+<div class="post-image"><img src="{{ site.baseurl }}/assets/img/posts/local-press-cafe-1.jpg" alt="1"></div>
 
 <p class="caption">Local press cafe may be somewhat pressed for time. Phasellus ac ultrices justo. Donec in dui viverra, sodales ligula sit amet, iaculis tortor.</p>
 
@@ -21,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non blandit or
 
 Fusce non lorem imperdiet, accumsan felis elementum, scelerisque ipsum. Nunc dui risus, tincidunt ac justo at, dignissim malesuada dolor. Aliquam bibendum pharetra nulla, ac auctor arcu pretium ac. Ut elementum rhoncus metus. Nunc semper blandit nisl et facilisis. Nullam aliquam sodales sapien non aliquam. Vivamus rhoncus consequat arcu sit amet scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tellus nunc, faucibus ac tincidunt eget, lacinia porta dolor. Nullam scelerisque lectus purus, et pharetra mi rhoncus vitae. Aliquam erat volutpat. Proin vel leo semper, euismod urna quis, commodo mauris.
 
-<div class="post-image"><img src="/assets/img/posts/local-press-cafe-2.jpg" alt="2"></div>
+<div class="post-image"><img src="{{ site.baseurl }}/assets/img/posts/local-press-cafe-2.jpg" alt="2"></div>
 
 <p class="caption">Yeah this is some great stuff.</p>
 
