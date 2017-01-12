@@ -2,15 +2,17 @@
 
 	<ul>
 		{% for post in site.posts offset:{{include.offset}} limit:{{include.limit}} %}
-			<a href="{{ site.baseurl }}{{ post.url }}">
-				<li class="article-item" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.feature-image }}');">
-					<div class="item-header">
-						<span class="item-title">{{ post.title }}</span>
-						<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
-						<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
-					</div>
-				</li>
-			</a>
+			{% if post.url != page.url %}
+				<a href="{{ site.baseurl }}{{ post.url }}">
+					<li class="article-item" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.feature-image }}');">
+						<div class="item-header">
+							<span class="item-title">{{ post.title }}</span>
+							<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
+							<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
+						</div>
+					</li>
+				</a>
+			{% endif %}
 		{% endfor %}
 	</ul>
 

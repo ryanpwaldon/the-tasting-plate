@@ -1,3 +1,4 @@
+title: 'The Tasting Plate'
 baseurl: /the-tasting-plate
 exclude: ['README.md']
 timezone: Australia/Sydney
@@ -5,9 +6,9 @@ port: 4000
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
+      path: ''
+      type: 'posts'
     values:
-      permalink: "/eats/:title"
+      permalink: '/eats/:title'
       layout: "post"
       author: "Tina Mao"
