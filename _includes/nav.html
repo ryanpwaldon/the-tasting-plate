@@ -1,7 +1,7 @@
 <nav>
 	<ul>
-		<li><h2><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></h2></li>
-		<li><h2><a href="/eats" {% if page.url == "/eats/" %}class="active"{% endif %}>Eats</a></li>
-		<li><h2><a href="/about" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></h2></li>
+		<li><h2><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></h2></li>
+		<li><h2><a href="{{ site.baseurl }}/eats" {% if page.url == "/eats/" %}class="active"{% endif %}>Eats</a></li>
+		<li><h2><a href="{{ site.baseurl }}/about" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></h2></li>
 	</ul>
 </nav>
