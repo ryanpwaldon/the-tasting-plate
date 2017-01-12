@@ -1,5 +1,6 @@
 ---
 title: Fish & Chip Co
+feature-image: local-press-cafe-1.jpg
 eaten: 2016/12/20
 rating: 2
 cost: $$$$

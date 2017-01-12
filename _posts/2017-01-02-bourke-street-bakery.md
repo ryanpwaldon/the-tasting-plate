@@ -1,5 +1,6 @@
 ---
 title: Bourke Street Bakery
+feature-image: local-press-cafe-2.jpg
 eaten: 2016/12/20
 rating: 3.5
 cost: $
