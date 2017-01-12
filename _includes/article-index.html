@@ -2,7 +2,7 @@
 
 	<ul>
 		{% for post in site.posts offset:{{include.offset}} limit:{{include.limit}} %}
-			<a href="{{ post.url }}">
+			<a href="{{ site.baseurl }}{{ post.url }}">
 				<li class="article-item" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.feature-image }}');">
 					<div class="item-header">
 						<span class="item-title">{{ post.title }}</span>
