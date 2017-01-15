@@ -1,0 +1,51 @@
+<div class="article-index">
+
+	<ul>
+		{% for post in paginator.posts %}
+			<li class="article-item">
+				<a href="{{ site.baseurl }}{{ post.url }}">
+					<div class="item-header">
+						<span class="item-title">{{ post.title }}</span>
+						<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
+						<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
+					</div>
+					<div class="item-image" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.main-image }}');">
+					</div>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+	{% if paginator.total_pages > 1 %}
+		<div class="pagination">
+
+			<!-- Previous page -->
+			{% if paginator.previous_page %}
+				<a class="active-arrow" href='{{ site.baseurl }}{{ paginator.previous_page_path }}'><</a>
+			{% else %}
+				<span class="inactive-arrow"><</span>
+			{% endif %}
+
+			<!-- Pages -->
+			{% for page in (1..paginator.total_pages) %}
+				{% if page == paginator.page %}
+					<span class="inactive-page">{{ page }}</span>
+				{% elsif page == 1 %}
+					<a class="active-page" href="{{ site.baseurl }}/eats">{{ page }}</a>
+				{% else %}
+					<a class="active-page" href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+				{% endif %}
+			{% endfor %}
+
+			<!-- Next page -->
+			{% if paginator.next_page %}
+				<a class="active-arrow" href="{{ site.baseurl }}{{ paginator.next_page_path }}">></a>
+			{% else %}
+				<span class="inactive-arrow">></span>
+			{% endif %}
+
+		</div>
+	{% endif %}
+
+</div>
+

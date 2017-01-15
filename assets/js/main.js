@@ -49,7 +49,7 @@ $(function () {
   }
 
   for (var i = 0; i < divsToAdd; i++) {
-    $('.article-index ul').append('<li class="article-item" style="visibility: hidden;"><<div class="article-item-image"></div></li>');
+    $('.article-index ul').append('<li class="article-item" style="visibility: hidden;"><div class="item-image"></div></li>');
   }
 
   /* email cipher

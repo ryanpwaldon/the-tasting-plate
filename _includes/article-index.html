@@ -3,23 +3,25 @@
 	<ul>
 		{% for post in site.posts offset:{{include.offset}} limit:{{include.limit}} %}
 			{% if post.url != page.url %}
-				<a href="{{ site.baseurl }}{{ post.url }}">
-					<li class="article-item" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.feature-image }}');">
-						<div class="item-header">
-							<span class="item-title">{{ post.title }}</span>
-							<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
-							<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
-						</div>
+					<li class="article-item">
+						<a href="{{ site.baseurl }}{{ post.url }}">
+							<div class="item-header">
+								<span class="item-title">{{ post.title }}</span>
+								<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
+								<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
+							</div>
+							<div class="item-image" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.main-image }}');">
+							</div>
+						</a>
 					</li>
-				</a>
 			{% endif %}
 		{% endfor %}
 	</ul>
 
-	{% if include.view-all-eats %}
+	<a href="{{ site.baseurl }}/eats">
 		<div class="view-all-eats">
 			<p>view all eats</p>
 		</div>
-	{% endif %}
-	
+	</a>
+
 </div>

@@ -1,6 +1,6 @@
 ---
 title: Local Press Cafe
-feature-image: local-press-cafe-1.jpg
+main-image: local-press-cafe-1.jpg
 eaten: 2016/12/20
 rating: 5
 cost: $$$

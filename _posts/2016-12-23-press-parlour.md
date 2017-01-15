@@ -1,6 +1,6 @@
 ---
 title: Press Parlour
-feature-image: local-press-cafe-2.jpg
+main-image: local-press-cafe-2.jpg
 eaten: 2016/12/20
 rating: 5
 cost: $$$$

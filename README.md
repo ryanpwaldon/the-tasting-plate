@@ -2,12 +2,10 @@
 
 ## To do:
 - Inlcude instagram somewhere
-- Add pagination
 - Add scrolling share bar
-- Design instagram profile
+- Design instagram profile picture
 - Add link hover effect
+- Add designed by ryan tag
 
 ## To fix:
-- Fix article-index background-image structure
 - Fix empty space under no-caption images (for posts)
-- Fix anchor tags overflowing items in article-index

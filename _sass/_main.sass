@@ -233,38 +233,47 @@ nav
 		flex-flow: row wrap
 
 		.article-item
+			position: relative
 			width: 240px
-			height: 320px
 			border: $border
 			border-radius: 5px
 			margin-bottom: 40px
-			background-position: center center
-			background-size: cover
-			background-repeat: no-repeat
 			overflow: hidden
 
-			.item-header
-				background-color: white
-				font-family: $opensans
-				font-size: 10px
-				letter-spacing: 1px
-				line-height: 16px
-				font-weight: 300
-				padding: 8px
+			a
 
-				.item-title
-					color: $black
+				.item-header
+					position: absolute
+					width: 100%
+					box-sizing: border-box
+					background-color: white
+					font-family: $opensans
+					font-size: 10px
+					letter-spacing: 1px
+					line-height: 16px
+					font-weight: 300
+					padding: 8px
 
-				.item-suburb
-					color: $grey-dark
+					.item-title
+						color: $black
 
-				.item-eaten
-					color: $blue
+					.item-suburb
+						color: $grey-dark
 
-				.fa
-					color: $grey-light
-					font-size: 4px
-					vertical-align: middle
+					.item-eaten
+						color: $blue
+
+					.fa
+						color: $grey-light
+						font-size: 4px
+						vertical-align: middle
+
+				.item-image
+					margin-top: 48px
+					height: 280px
+					background-position: center center
+					background-size: cover
+					background-repeat: no-repeat
 
 	.view-all-eats
 		width: 100%
@@ -281,6 +290,40 @@ nav
 			font-weight: 300
 			color: $grey-dark
 			letter-spacing: 1px
+
+// article-pagination
+/*==========================================================================================================================================*/
+	
+.pagination
+	text-align: center
+	margin: 0px 0px 40px 0px
+
+	span, a
+		font-family: $opensans
+		font-size: 15px
+		font-weight: 300
+		padding: 0px 5px
+
+	.active-page, .active-arrow
+		color: $black
+
+	.inactive-page
+		color: $grey-light
+
+	.bullet
+		font-size: 25px
+		vertical-align: -12%
+		color: white
+
+	.arrow
+		padding: 4px 9px
+		background-color: white
+		border: $border
+		border-radius: 100%
+
+	.inactive-arrow
+		visibility: hidden
+
 
 // footer
 /*==========================================================================================================================================*/

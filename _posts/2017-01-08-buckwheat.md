@@ -1,6 +1,6 @@
 ---
 title: Buckwheat
-feature-image: rye-1.jpg
+main-image: rye-1.jpg
 eaten: 2016/12/15
 rating: 1.5
 cost: $$

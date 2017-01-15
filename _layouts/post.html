@@ -6,6 +6,7 @@ layout: default
 	<h1><a href="{{ site.baseurl }}/eats">Eats</a></span> <span class="body-title-post-name">/ {{ page.title }}</span></h1>
 </div>
 
+<!-- Share block -->
 <aside class="share">
 	<div class="share-title">
 		<p>Share</p>
@@ -17,6 +18,7 @@ layout: default
 	</div>
 </aside>
 
+<!-- Metadata block -->
 <aside class="metadata">
 	<div class="metadata-title">
 		<p>Metadata</p>
@@ -33,6 +35,7 @@ layout: default
 	</div>
 </aside>
 
+<!-- Post body -->
 <section class="post">
 	<div class="post-header">
 		<h3>
@@ -64,4 +67,4 @@ layout: default
 	<h1>Recently Eaten</h1>
 </div>
 
-{% include article-index.html view-all-eats=true offset=0 limit=6 %}
+{% include article-index.html offset=0 limit=6 %}
