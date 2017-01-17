@@ -69,4 +69,19 @@ $(function () {
 
   $('.copyright-year').append(moment().get('year'));
 
+  /* hearts
+  ========================================================================================================*/
+
+    if (rating % 1 === 0.5) {
+      $('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart-half.svg" alt="heart-half">');
+      rating = rating - 0.5;
+      for (i = 0; i < rating; i ++) {
+        $('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart.svg" alt="heart">');
+      }
+    } else {
+      for (i = 0; i < rating; i ++) {
+        $('.rating').append('<img class="heart" src="{{ site.baseurl }}/assets/img/misc/heart.svg" alt="heart">');
+      }
+    }
+
 });

@@ -8,6 +8,10 @@
 					<span class="feature-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
 					<span class="feature-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <strong>Eaten</strong> <span class="date">{{ post.date }}</span></span>
 				</h3>
+				<div class="rating"></div>
+				<script>
+					var rating = {{ post.rating }};
+				</script>
 			</div>
 			<div class="feature-image" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.main-image }}');">
 			</div>
