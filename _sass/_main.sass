@@ -16,6 +16,36 @@ $blue: #339CDD
 $playfair: 'Playfair Display', serif
 $opensans: 'Open Sans', sans-serif
 
+// font-mixins
+/*=====================*/
+
+=playfair-large
+	font-family: $playfair
+	font-size: 42px
+	font-weight: 400
+	color: $grey-dark
+
+=playfair-small
+	font-family: $playfair
+	color: $grey-dark
+	font-weight: 400
+	font-size: 15px
+
+=opens-normal
+	font-family: $opensans
+	font-size: 15px
+	font-weight: 300
+
+=opens-medium
+	font-family: $opensans
+	font-size: 12px
+	font-weight: 300
+
+=opens-small
+	font-family: $opensans
+	font-size: 10px
+	font-weight: 300
+
 // measurements
 /*=====================*/
 
@@ -63,10 +93,7 @@ nav
 		padding: 0
 
 		li
-			font-family: $playfair
-			color: $grey-dark
-			font-weight: 600
-			font-size: 15px
+			+playfair-small
 			padding-bottom: 6px
 
 			.active
@@ -104,10 +131,7 @@ nav
 				display: inline-block
 
 			h1
-				font-family: $playfair
-				font-size: 42px
-				font-weight: 400
-				color: $grey-dark
+				+playfair-large
 				line-height: 58px
 
 			.hr-thick
@@ -116,12 +140,10 @@ nav
 				margin: 15px 0px 20px 0px
 
 			.subtitle
-				font-family: $opensans
-				font-size: 15px
-				font-weight: 300
+				+opens-normal
+				color: $grey-dark
 				letter-spacing: 1px
 				padding-bottom: 6px
-				color: $grey-dark
 
 			.subtitle strong
 				font-weight: 600
@@ -168,10 +190,7 @@ nav
 			padding: 0px 0px 40px 0px
 
 			h1
-				font-family: $playfair
-				font-size: 42px
-				font-weight: 400
-				color: $grey-dark
+				+playfair-large
 
 // article-feature
 /*==========================================================================================================================================*/
@@ -187,12 +206,10 @@ nav
 		overflow: hidden
 
 		h3
+			+opens-normal
+			letter-spacing: 1px
 			float: left
 			padding: 15px
-			font-family: $opensans
-			font-size: 15px
-			font-weight: 300
-			letter-spacing: 1px
 
 			.feature-title
 				color: $black
@@ -227,12 +244,10 @@ nav
 		background-color: white
 
 		.article-typography
-			padding: 15px
-			font-family: $opensans
+			+opens-normal
 			color: $black
-			font-weight: 200
+			padding: 15px
 			line-height: 30px
-			font-size: 15px
 
 // article-index
 /*==========================================================================================================================================*/
@@ -257,15 +272,13 @@ nav
 			a
 
 				.item-header
+					+opens-small
+					line-height: 16px
+					letter-spacing: 1px
 					position: absolute
 					width: 100%
 					box-sizing: border-box
 					background-color: white
-					font-family: $opensans
-					font-size: 10px
-					letter-spacing: 1px
-					line-height: 16px
-					font-weight: 300
 					padding: 8px
 
 					.item-title
@@ -298,12 +311,10 @@ nav
 		margin-bottom: 40px
 
 		p
-			padding: 15px
-			font-family: $opensans
-			font-size: 15px
-			font-weight: 300
+			+opens-normal
 			color: $grey-dark
 			letter-spacing: 1px
+			padding: 15px
 
 // article-pagination
 /*==========================================================================================================================================*/
@@ -313,9 +324,7 @@ nav
 	margin: 0px 0px 40px 0px
 
 	span, a
-		font-family: $opensans
-		font-size: 15px
-		font-weight: 300
+		+opens-normal
 		padding: 0px 5px
 
 	.active-page, .active-arrow
@@ -355,10 +364,8 @@ nav
 		overflow: hidden
 
 		p
-			font-family: $opensans
+			+opens-normal
 			color: $grey-dark
-			font-size: 15px
-			font-weight: 200
 			letter-spacing: 1px
 
 		.fa
@@ -397,7 +404,7 @@ nav
 
 			.insta-logo
 				height: 28px
-				padding-top: 10px
+				padding-top: 15px
 
 		.footer-text
 			float: right
@@ -421,8 +428,7 @@ nav
 	left: -75px
 
 	p
-		font-family: $opensans
-		font-weight: 300
+		+opens-normal
 		color: $grey-dark
 		letter-spacing: 1px
 
@@ -444,21 +450,19 @@ nav
 	right: -130px
 
 	p
-		font-family: $opensans
-		font-weight: 300
 		color: $grey-dark
 		letter-spacing: 1px
 
 	.metadata-title
+		+opens-normal
 		display: inline-block
 		padding: 15px 0px
-		font-size: 15px
 		border-bottom: $border
 
 	.metadata-content
+		+opens-medium
 		padding: 15px 0px
 		line-height: 20px
-		font-size: 12px
 
 	.hr-thin
 		border: none
@@ -476,13 +480,11 @@ nav
 	.post-header
 		
 		h3
+			+opens-normal
+			letter-spacing: 1px
 			float: left
 			background-color: white
 			padding: 15px
-			font-family: $opensans
-			font-size: 15px
-			font-weight: 300
-			letter-spacing: 1px
 
 			.post-title
 				color: $black
@@ -510,12 +512,10 @@ nav
 	.post-content
 
 		p
-			margin: 0px 20px 20px 20px
-			font-family: $opensans
+			+opens-normal
 			color: $black
-			font-weight: 200
 			line-height: 30px
-			font-size: 15px
+			margin: 0px 20px 20px 20px
 
 		.post-image
 
