@@ -1,8 +1,8 @@
 ---
-title: Buckwheat
+title: Bearing Honey
 main-image: rye-1.jpg
 eaten: 2016/12/15
-rating: 1.5
+rating: 4.5
 cost: $$
 district: Canberra
 address: '5 Lonsdale St, Braddon ACT 2602'

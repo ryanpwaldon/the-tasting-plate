@@ -12,6 +12,7 @@ $grey-light-light: #F4F4F4
 $grey-border: #DEDEDE
 $black: #676767
 $blue: #339CDD
+
 //fonts
 $playfair: 'Playfair Display', serif
 $opensans: 'Open Sans', sans-serif
@@ -51,6 +52,7 @@ $opensans: 'Open Sans', sans-serif
 
 $page-width: 780px
 $border: 1px solid $grey-border
+$vertical-padding: 30px
 
 // reset
 /*=====================*/
@@ -101,7 +103,6 @@ nav
 
 			.insta-icon
 				height: 20px
-				color: $grey-dark
 
 // header
 /*==========================================================================================================================================*/
@@ -115,7 +116,7 @@ nav
 		width: $page-width
 		margin: auto
 		padding: 0px 40px
-		margin-top: 50px
+		margin-top: $vertical-padding
 
 		nav
 			position: absolute
@@ -125,7 +126,7 @@ nav
 		.header-upper
 			position: relative
 			height: 100%
-			margin-bottom: 50px
+			margin-bottom: $vertical-padding
 
 			.title
 				display: inline-block
@@ -184,10 +185,10 @@ nav
 		position: relative
 		width: $page-width
 		margin: auto
-		padding: 40px 40px 0px 40px
+		padding: $vertical-padding 40px 0px 40px
 
 		.body-title
-			padding: 0px 0px 40px 0px
+			padding: 0px 0px $vertical-padding 0px
 
 			h1
 				+playfair-large
@@ -199,7 +200,7 @@ nav
 	background-color: white
 	border: $border
 	border-radius: 5px
-	margin-bottom: 40px
+	margin-bottom: $vertical-padding
 	overflow: hidden
 	
 	.feature-header
@@ -227,7 +228,7 @@ nav
 
 		.rating
 			float: right
-			padding: 15px
+			padding: 15px 15px 15px 10px
 
 			.heart
 				vertical-align: middle
@@ -266,7 +267,7 @@ nav
 			width: 240px
 			border: $border
 			border-radius: 5px
-			margin-bottom: 40px
+			margin-bottom: $vertical-padding
 			overflow: hidden
 
 			a
@@ -308,7 +309,7 @@ nav
 		background-color: white
 		border: $border
 		border-radius: 5px
-		margin-bottom: 40px
+		margin-bottom: $vertical-padding
 
 		p
 			+opens-normal
@@ -321,7 +322,7 @@ nav
 	
 .pagination
 	text-align: center
-	margin: 0px 0px 40px 0px
+	margin: 0px 0px $vertical-padding 0px
 
 	span, a
 		+opens-normal
@@ -360,7 +361,7 @@ nav
 		width: $page-width
 		height: 100%
 		margin: auto
-		padding: 0px 40px 40px 40px
+		padding: 0px 40px $vertical-padding 40px
 		overflow: hidden
 
 		p
@@ -377,7 +378,7 @@ nav
 			color: $grey-light
 
 		.hr-thin
-			margin: 0px 0px 40px 0px
+			margin: 0px 0px $vertical-padding 0px
 			border: none
 			border-bottom: solid 1px white
 
@@ -471,7 +472,7 @@ nav
 
 .post
 	position: relative
-	margin-bottom: 40px
+	margin-bottom: $vertical-padding
 	background-color: white
 	border: $border
 	border-radius: 5px

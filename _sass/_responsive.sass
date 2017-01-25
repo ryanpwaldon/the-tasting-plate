@@ -1,6 +1,128 @@
-// iphone
-/*==========================================================================================================================================*/
-
-// body
+// breakpoints
 /*=====================*/
 
+$breakpoint-small: 570px
+$breakpoint-medium: 860px
+
+// medium
+/*=====================*/
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium)
+	
+	.header
+		
+		.header-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+
+	.body
+
+		.body-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+
+			a
+
+				.article-feature
+
+					.feature-header
+
+						.rating
+							position: absolute
+							margin-top: 47px
+							transform: scaleX(-1)
+
+	.footer
+		
+		.footer-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+			text-align: center
+
+			.insta-meta
+				float: none
+
+				.insta-feed
+					margin: auto
+
+			.footer-text
+				margin: auto
+				float: none
+				padding-top: 15px
+
+	.article-index
+
+		ul
+
+			.article-item
+				width: 47%
+
+				a
+
+					.item-image
+
+// small
+/*=====================*/
+
+@media (max-width: $breakpoint-small)
+
+	.header
+		
+		.header-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+
+	.body
+
+		.body-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+
+			a
+
+				.article-feature
+
+					.feature-header
+
+						.rating
+							position: absolute
+							margin-top: 47px
+							transform: scaleX(-1)
+
+					.feature-image
+						height: 300px
+
+	.footer
+		
+		.footer-content
+			width: 90%
+			padding-left: 10px
+			padding-right: 10px
+			text-align: center
+
+			.insta-meta
+				float: none
+
+				.insta-feed
+					margin: auto
+
+			.footer-text
+				margin: auto
+				float: none
+				padding-top: 15px
+
+	.article-index
+
+		ul
+
+			.article-item
+				width: 100%
+
+				a
+
+					.item-image
