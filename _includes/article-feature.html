@@ -1,7 +1,7 @@
 {% for post in site.posts limit:1 %}
 
-	<a href="{{ site.baseurl }}{{ post.url }}">
-		<div class="article-feature">
+	<div class="article-feature">
+		<a href="{{ site.baseurl }}{{ post.url }}">
 			<div class="feature-header">
 				<h3>
 					<span class="feature-title">{{ post.title }}</span>
@@ -18,7 +18,7 @@
 			<div class="feature-excerpt">
 				<p class="article-typography">{{ post.content | strip_html | truncatewords:100 }}</p>
 			</div>
-		</div>
-	</a>
+		</a>
+	</div>
 
 {% endfor %}
