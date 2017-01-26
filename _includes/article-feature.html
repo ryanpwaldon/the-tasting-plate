@@ -15,8 +15,10 @@
 			</div>
 			<div class="feature-image" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.main-image }}');">
 			</div>
-			<div class="feature-excerpt">
-				<p class="article-typography">{{ post.content | strip_html | truncatewords:100 }}</p>
+			<div class="excerpt-overlay">
+				<div class="feature-excerpt">
+					<p class="article-typography">{{ post.content | strip_html | truncatewords:100 }}</p>
+				</div>
 			</div>
 		</div>
 	</a>
