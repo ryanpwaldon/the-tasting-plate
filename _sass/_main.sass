@@ -84,6 +84,16 @@ ul
 body
 	background-color: $grey-light-light
 
+	.header-rule
+		position: fixed
+		border: none
+		border-bottom: #D8D8D8 8px solid
+		margin: 0px
+		z-index: 100000
+		box-sizing: border-box
+		top: 0
+		width: 100%
+
 // nav (for header and footer)
 /*==========================================================================================================================================*/
 
@@ -210,7 +220,10 @@ nav
 			+opens-normal
 			letter-spacing: 1px
 			float: left
-			padding: 15px
+			padding: 13px 15px
+			line-height: 20px
+			width: 100%
+			box-sizing: border-box
 
 			.feature-title
 				color: $black
@@ -226,14 +239,13 @@ nav
 				font-size: 4px
 				vertical-align: middle
 
-		.rating
-			float: right
-			padding: 15px 15px 15px 10px
+			.rating
+				float: right
 
-			.heart
-				vertical-align: middle
-				width: 20px
-				margin-left: 5px
+				.heart
+					vertical-align: middle
+					width: 20px
+					margin-left: 5px
 
 	.feature-image
 		height: 500px
