@@ -42,11 +42,11 @@ layout: default
 			<span class="post-title">{{ page.title }}</span>
 			<span class="post-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.suburb }}</span>
 			<span class="post-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <strong>Eaten</strong> <span class="date">{{ page.date }}</span></span>
+			<span class="rating"></span>
+			<script>
+				var rating = {{ page.rating }};
+			</script>
 		</h3>
-		<div class="rating"></div>
-		<script>
-			var rating = {{ page.rating }};
-		</script>
 	</div>
 	<div class="post-content">{{ page.content }}</div>
 	{% include map.html %}

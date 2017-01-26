@@ -207,6 +207,7 @@ nav
 /*==========================================================================================================================================*/
 
 .article-feature
+	position: relative
 	background-color: white
 	border: $border
 	border-radius: 5px
@@ -501,6 +502,8 @@ nav
 			float: left
 			background-color: white
 			padding: 15px
+			width: 100%
+			box-sizing: border-box
 
 			.post-title
 				color: $black
@@ -516,14 +519,13 @@ nav
 				font-size: 4px
 				vertical-align: middle
 
-		.rating
-			float: right
-			padding: 15px
+			.rating
+				float: right
 
-			.heart
-				vertical-align: middle
-				width: 20px
-				margin-left: 5px
+				.heart
+					vertical-align: middle
+					width: 20px
+					margin-left: 5px
 	
 	.post-content
 
