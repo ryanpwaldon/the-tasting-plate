@@ -1,11 +1,11 @@
 # the-tasting-plate
 
 ## To do:
-- Inlcude instagram somewhere
-- Add scrolling share bar
-- Design instagram profile picture
-- Add link hover effect
+- Scrolling share bar
+- Link hover effect
 - Add designed by ryan tag
+- Restructure post meta description
+- Add address to post map
+- Dev about page
 
 ## To fix:
-- Fix empty space under no-caption images (for posts)
