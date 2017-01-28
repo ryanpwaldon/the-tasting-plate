@@ -12,6 +12,12 @@ $(function () {
     $dateElem.text(formatted);
   });
 
+  $('.published').each(function (index, dateElem) {
+    var $dateElem = $(dateElem);
+    var formatted = moment($dateElem.text(), 'YYYY-MM-DD').format('ll');
+    $dateElem.text(formatted);
+  });
+
   /* instagram feed
   ========================================================================================================*/
 

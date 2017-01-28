@@ -19,7 +19,7 @@ layout: default
 </aside>
 
 <!-- Metadata block -->
-<aside class="metadata">
+<!-- <aside class="metadata">
 	<div class="metadata-title">
 		<p>Meta</p>
 	</div>
@@ -33,22 +33,32 @@ layout: default
 		<hr class="hr-thin">
 		<p><strong>District</strong><br>{{ page.district }}</p>
 	</div>
-</aside>
+</aside> -->
 
 <!-- Post body -->
 <section class="post">
 	<div class="post-header">
-		<h3>
+		<h3 class="first">
 			<span class="post-title">{{ page.title }}</span>
-			<span class="post-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.suburb }}</span>
-			<span class="post-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <strong>Eaten</strong> <span class="date">{{ page.date }}</span></span>
+			<span class="post-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.district }}</span>
+			<span class="post-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <span class="date">{{ page.date }}</span></span>
+			<i class="fa fa-circle" aria-hidden="true"></i>
+			<span class="published">{{ page.date }}</span>
+			<span class="post-rating"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.rating }}/5</span>
 			<span class="rating"></span>
 			<script>
 				var rating = {{ page.rating }};
 			</script>
 		</h3>
+		<hr class="hr-thin">
+		<h3 class="second">
+			<span class="post-address">Address <i class="fa fa-circle" aria-hidden="true"></i> {{ page.address }}</span>
+		</h3>
 	</div>
-	<div class="post-content">{{ page.content }}</div>
+	<div class="post-content">
+		<span class="rating mobile"></span>
+		{{ page.content }}
+	</div>
 	{% include map.html %}
 </section>
 

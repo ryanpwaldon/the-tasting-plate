@@ -12,6 +12,7 @@ $grey-light-light: #F4F4F4
 $grey-border: #DEDEDE
 $black: #676767
 $blue: #339CDD
+$red: #F5737D
 
 //fonts
 $playfair: 'Playfair Display', serif
@@ -256,6 +257,9 @@ a
 			background-size: cover
 			background-repeat: no-repeat
 
+			.rating.mobile
+				display: none
+
 		.excerpt-overlay
 			background-color: white
 
@@ -497,6 +501,7 @@ a
 	overflow: hidden
 
 	.post-header
+		overflow: hidden
 		
 		h3
 			+opens-normal
@@ -504,9 +509,14 @@ a
 			float: left
 			background-color: white
 			padding: 13px 15px
-			line-height: 20px
+			line-height: 160%
 			width: 100%
 			box-sizing: border-box
+
+			.fa
+				color: $grey-light
+				font-size: 4px
+				vertical-align: middle
 
 			.post-title
 				color: $black
@@ -515,12 +525,13 @@ a
 				color: $grey-dark
 
 			.post-eaten
-				color: $blue
+				color: $grey-dark
 
-			.fa
-				color: $grey-light
-				font-size: 4px
-				vertical-align: middle
+			.published
+				color: $grey-dark
+
+			.post-rating
+				color: $red
 
 			.rating
 				float: right
@@ -529,8 +540,20 @@ a
 					vertical-align: middle
 					width: 20px
 					margin-left: 5px
+
+		.hr-thin
+			margin: 0px 0px 0px 15px
+			border: none
+			border-bottom: $border
+			width: 100px
+
+		.second
+			color: $grey-dark
 	
 	.post-content
+
+		.rating.mobile
+			display: none
 
 		p
 			+opens-normal
@@ -548,8 +571,31 @@ a
 			border-bottom: solid $grey-light 1px
 			padding: 10px 0px
 
-	#map
-		height: 400px
+	.map-contents
 
-		.gm-style-cc
-			display: none
+		#map
+			height: 400px
+
+			.gm-style-cc
+				display: none
+
+		.caption-map
+			position: absolute
+			z-index: 100
+			margin: 15px 15px
+			background-color: white
+			border: $border
+			border-radius: 5px
+			+opens-normal
+			letter-spacing: 1px
+			color: $grey-dark
+			line-height: 150%
+			padding: 8px 15px
+
+			.caption-map-title
+				color: $black
+
+			.fa
+				color: $grey-light
+				font-size: 4px
+				vertical-align: middle
