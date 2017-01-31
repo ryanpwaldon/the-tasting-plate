@@ -6,10 +6,18 @@
 				<a href="{{ site.baseurl }}{{ post.url }}">
 					<div class="item-header">
 						<span class="item-title">{{ post.title }}</span>
-						<span class="item-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ post.suburb }}</span>
-						<p class="item-eaten"><strong>Eaten</strong> <span class="date">{{ post.date }}</span></p>
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span class="item-suburb">{{ post.district }}</span>
+						<br>
+						<span class="item-eaten">Eaten <span class="date">{{ post.date }}</span></span>
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span class="post-rating">Rating {{ post.rating }}/5</span>
 					</div>
 					<div class="item-image" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{ post.main-image }}');">
+						<span class="rating mobile"></span>
+						<script>
+							var rating = {{ post.rating }};
+						</script>
 					</div>
 				</a>
 			</li>
@@ -48,4 +56,3 @@
 	{% endif %}
 
 </div>
-
