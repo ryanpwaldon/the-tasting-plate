@@ -54,6 +54,7 @@ $opensans: 'Open Sans', sans-serif
 $page-width: 780px
 $border: 1px solid $grey-border
 $vertical-padding: 30px
+$item-image-height: 240px
 
 // reset
 /*=====================*/
@@ -314,6 +315,9 @@ a
 					.item-eaten
 						color: $blue
 
+					.post-rating
+						color: $grey-dark
+
 					.fa
 						color: $grey-light
 						font-size: 4px
@@ -321,10 +325,21 @@ a
 
 				.item-image
 					margin-top: 48px
-					height: 280px
+					height: $item-image-height
 					background-position: center center
 					background-size: cover
 					background-repeat: no-repeat
+
+					.rating.mobile
+						transform: scaleX(-1)
+						display: inline
+						position: absolute
+						padding: 8px 8px
+
+						.heart
+							vertical-align: middle
+							width: 20px
+							margin-left: 5px
 
 	.view-all-eats
 		width: 100%
@@ -416,8 +431,8 @@ a
 				height: 100%
 
 				img
-					width: 50px
-					border-radius: 5px
+					width: 70px
+					border-radius: 0px
 
 			.insta-text
 				padding-top: 10px
@@ -436,8 +451,26 @@ a
 			p
 				padding-bottom: 10px
 
-		// nav
-		// 	float: left
+// about
+/*==========================================================================================================================================*/
+
+.about
+	text-align: center
+	margin-bottom: $vertical-padding
+
+	.about-image
+
+		img
+			height: 120px
+			padding-bottom: 30px
+			border-bottom: $border
+			margin-bottom: 30px
+
+	.about-description
+		+opens-normal
+		color: $grey-dark
+		line-height: 160%
+
 
 // post
 /*==========================================================================================================================================*/
@@ -526,13 +559,13 @@ a
 				color: $grey-dark
 
 			.post-eaten
-				color: $grey-dark
+				color: $blue
 
 			.published
 				color: $grey-dark
 
 			.post-rating
-				color: $red
+				color: $grey-dark
 
 			.rating
 				float: right

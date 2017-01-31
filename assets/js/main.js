@@ -23,7 +23,7 @@ $(function () {
 
   var token = '4340303370.f4990fa.894ffa2198414ffaa606a6b5252244ea', // learn how to obtain it below
     userid = 'self', // User ID - get it in source HTML of your Instagram profile or look at the next example :)
-    num_photos = 4; // how many photos do you want to get
+    num_photos = 3; // how many photos do you want to get
 
   $.ajax({
     url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',

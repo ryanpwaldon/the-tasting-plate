@@ -40,11 +40,10 @@ layout: default
 	<div class="post-header">
 		<h3 class="first">
 			<span class="post-title">{{ page.title }}</span>
-			<span class="post-suburb"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.district }}</span>
-			<span class="post-eaten"><i class="fa fa-circle" aria-hidden="true"></i> <span class="date">{{ page.date }}</span></span>
 			<i class="fa fa-circle" aria-hidden="true"></i>
-			<span class="published">{{ page.date }}</span>
-			<span class="post-rating"><i class="fa fa-circle" aria-hidden="true"></i> {{ page.rating }}/5</span>
+			<span class="post-suburb">{{ page.district }}</span>
+			<i class="fa fa-circle" aria-hidden="true"></i>
+			<span class="post-eaten">Eaten <span class="date">{{ page.date }}</span></span>
 			<span class="rating"></span>
 			<script>
 				var rating = {{ page.rating }};
@@ -52,7 +51,11 @@ layout: default
 		</h3>
 		<hr class="hr-thin">
 		<h3 class="second">
-			<span class="post-address">Address <i class="fa fa-circle" aria-hidden="true"></i> {{ page.address }}</span>
+			<span class="post-address">Located at {{ page.address }}</span>
+			<i class="fa fa-circle" aria-hidden="true"></i>
+			<span class="post-rating">Rating {{ page.rating }}/5</span>
+			<i class="fa fa-circle" aria-hidden="true"></i>
+			<span class="published">{{ page.date }}</span>
 		</h3>
 	</div>
 	<div class="post-content">
