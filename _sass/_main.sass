@@ -9,6 +9,7 @@
 $grey-dark: #95989A
 $grey-light: #D8D8D8
 $grey-light-light: #F4F4F4
+$grey-light-light-light: #FCFCFC
 $grey-border: #DEDEDE
 $black: #676767
 $blue: #339CDD
@@ -71,6 +72,13 @@ a
 	color: inherit
 	font-weight: 300
 
+a h1, h1 a, h2 a, .article-feature-link h3, .article-item .item-header, .view-all-eats
+	opacity: 1
+	transition: opacity ease 200ms
+
+	&:hover
+		opacity: 0.6
+
 ul
 	list-style-type: none
 	padding: 0
@@ -84,7 +92,7 @@ ul
 /*==========================================================================================================================================*/
 
 body
-	background-color: $grey-light-light
+	background-color: white
 
 	.header-rule
 		position: fixed
@@ -120,7 +128,7 @@ nav
 /*==========================================================================================================================================*/
 
 .header
-	background-color: white
+	background-color: $grey-light-light-light
 	overflow: hidden
 
 	.header-content
@@ -306,7 +314,6 @@ nav
 					position: absolute
 					width: 100%
 					box-sizing: border-box
-					background-color: white
 					padding: 8px
 
 					.item-title
@@ -597,8 +604,7 @@ nav
 			color: $grey-dark
 			border-bottom: solid $grey-light 1px
 			padding: 10px 0px
-			width: 100%
-			display: inline-block
+			display: block
 
 	.map-contents
 
