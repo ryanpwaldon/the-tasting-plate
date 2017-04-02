@@ -2,7 +2,7 @@
 title: Paletas Wey
 main-image: paletas-wey-5.jpg
 eaten: 2017/02/30
-rating: 5
+rating: 4.5
 cost: $
 district: Bali
 address: 'Beachwalk, Jl. Pantai Kuta, Kuta, Kabupaten Badung, Bali 80361, Indonesia'
