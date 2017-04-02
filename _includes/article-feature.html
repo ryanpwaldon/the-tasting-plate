@@ -20,8 +20,9 @@
 			</div>
 			<div class="excerpt-overlay">
 				<div class="feature-excerpt">
-					{% assign excerpt = post.content | split: "</span>" %}
-					<p class="article-typography">{{ excerpt[1] | strip_html | truncatewords:100 }}</p>
+					{% assign excerpt_array = post.content | split: "</span>" %}
+					{% assign excerpt = excerpt_array[1] | split: "<span" %}
+					<p class="article-typography">{{ excerpt[0] | strip_html | truncatewords:100 }}</p>
 				</div>
 			</div>
 		</div>
