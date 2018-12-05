@@ -1,6 +1,6 @@
 # setup
 title: 'The Tasting Plate'
-baseurl: ''
+baseurl: '/the-tasting-plate'
 exclude: ['README.md']
 timezone: Australia/Sydney
 port: 4000
